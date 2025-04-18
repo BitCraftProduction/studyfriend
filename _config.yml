@@ -2,11 +2,16 @@ title: Study Friend
 email: your-email@example.com
 description: >-
   Study Friend is your AI-powered smart learning partner.
-baseurl: ""
-url: ""
+
+
+baseurl: "/studyfriend"  # <-- name of the repo
+url: "https://bitcraftproduction.github.io"
+
+
 theme: minima
 plugins:
   - jekyll-feed
+
 
 collections:
   pages:
