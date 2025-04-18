@@ -3,28 +3,9 @@
   {% include head.html %}
 <body>
 
-    <header>
-        <div class="navbar">
-          <div class="logo">
-            <a href="{{ "/" | relative_url }}">Study Friend</a>
-          </div>
-      
-          <button class="nav-toggle" aria-label="Toggle navigation">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-      
-          <nav>
-            <ul>
-              <li><a href="{{ "/" | relative_url }}">Home</a></li>
-              <li><a href="{{ "/about" | relative_url }}">About</a></li>
-              <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
-              <li><a href="{{ "/blog" | relative_url }}">Blog</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+  <header>
+    {% include header.html %}
+  </header>
       
 
   <!-- Main Content Section -->
@@ -49,37 +30,9 @@
 
   <!-- Footer Section -->
 
-<footer>
-    <div class="footer-content">
-      <div class="footer-left">
-        <h4>Study Friend</h4>
-        <p>Empowering learners with bite-sized, AI-driven knowledge tools.</p>
-      </div>
-      
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="/features">Features</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-social">
-        <h4>Follow Us</h4>
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <p>&copy; 2025 Study Friend. All rights reserved.</p>
-    </div>
-  </footer>
+ <footer>
+  {% include footer.html %}
+ </footer>
   
 
 

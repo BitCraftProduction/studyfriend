@@ -1,42 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta name="author" content="{{ site.author }}">
-  <meta name="robots" content="index, follow">
-
-  <!-- Link to the custom CSS file -->
-  <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+  {% include head.html %}
 </head>
 <body>
 
   <header>
-    <div class="navbar">
-      <div class="logo">
-        <a href="{{ "/" | relative_url }}">Study Friend</a>
-      </div>
-  
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-  
-      <nav>
-        <ul>
-          <li><a href="{{ "/" | relative_url }}">Home</a></li>
-          <li><a href="{{ "/about" | relative_url }}">About</a></li>
-          <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
-          <li><a href="{{ "/blog" | relative_url }}">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
+    {% include header.html %}
   </header>
+ 
 
   <!-- Main Content Section -->
   <main>
