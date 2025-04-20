@@ -1,4 +1,3 @@
-/* Enhanced Modern Design - Study Friend Website */
 
 /* Global Variables */
 :root {
@@ -185,7 +184,7 @@ main {
 
 .post-meta {
   font-size: 0.95rem;
-  color: #777;
+  color: #111111;
   margin-bottom: 2rem;
 }
 
@@ -276,6 +275,149 @@ h2:before {
   font-size: 0.925rem;
   flex-grow: 1;
 }
+
+.post-content {
+  line-height: 1.8;
+  
+}
+
+.post-content p {
+  margin-bottom: 10px;
+}
+
+.post-content h2, h3, h4, h5, h6{
+  margin-top: 20px;
+}
+
+.post-content ul{
+  margin-left: 20px;
+  list-style:disc;
+}
+.post-content ol{
+  margin-left: 20px;
+  /* list-style:disc; */
+}
+
+.post-content table{
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post-content table thead {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: left;
+}
+
+.post-content table th,
+.post-content table td {
+  padding: 16px 20px;
+  font-size: 16px;
+}
+
+.post-content table tbody tr {
+  background-color: #f9f9f9;
+  transition: background 0.3s;
+}
+
+.post-content table tbody tr:hover {
+  background-color: #eef3ff;
+}
+
+.post-content table tbody tr:nth-child(even) {
+  background-color: #f1f5ff;
+}
+
+.post-content table td {
+  color: #333;
+}
+
+
+/* Style for preformatted code blocks */
+pre code {
+  display: block;
+  background: #0f111a; /* Dark background */
+  color: #f8f8f2; /* Light text */
+  padding: 1em;
+  margin: 1.5em 0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  overflow-x: auto;
+  line-height: 1.6;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Optional: Customize scrollbar for code blocks */
+pre code::-webkit-scrollbar {
+  height: 10px;
+}
+pre code::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 10px;
+}
+pre code::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+/* Inline code (optional) */
+code {
+  background-color: #f1f1f1;
+  color: #d6336c;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+}
+
+
+blockquote {
+  position: relative;
+  background: #fdfdfd;
+  border-left: 6px solid #6a11cb; /* Gradient vibe */
+  margin: 2em 0;
+  padding: 1.2em 1.5em;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #444;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 3em;
+  color: #6a11cb;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  font-family: Georgia, serif;
+  opacity: 0.2;
+}
+
+blockquote::after {
+  content: "”";
+  font-size: 3em;
+  color: #6a11cb;
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+  font-family: Georgia, serif;
+  opacity: 0.2;
+}
+
+blockquote p {
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+
+
 
 /* Load More Button */
 #load-more {
