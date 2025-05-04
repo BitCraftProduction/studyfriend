@@ -63,6 +63,17 @@
  <footer>
   {% include footer.html %}
  </footer>
+
+ {% if page.faqs %}
+  <div class="faqs">
+    <h3 class="h4">Frequently Asked Questions</h3>
+    {% for faq in page.faqs %}
+    <div class="faq-item">
+      <h4 class="h5">{{ faq.question }}</h4>
+      <p>{{ faq.answer }}</p>
+    </div>
+    {% endfor %}
+  </div>
   
 
 
